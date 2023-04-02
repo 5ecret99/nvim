@@ -12,6 +12,7 @@ packer.startup({
 		{'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
 		{'nvim-telescope/telescope-packer.nvim'},
 		{'cljoly/telescope-repo.nvim'},
+        {'nvim-treesitter/nvim-treesitter'}
 		}, },
 
         {'folke/which-key.nvim', config = 'require("config.whichkey")'},
