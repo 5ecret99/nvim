@@ -8,6 +8,7 @@ local mappings = {
         name = 'Search',
         f = {'<cmd>Telescope find_files<cr>', 'Find Files'},
         g = {'<cmd>Telescope live_grep<cr>', 'Live Grep'},
+        b = {'<cmd>Telescope buffers<cr>', 'tabs'},
         e = {'<cmd>CocCommand explorer<cr>', 'File Explorer'},
     },
 }
@@ -36,6 +37,7 @@ register_n('<leader>', mappings)
 register_n('', {
     ['<C-f>'] = mappings.s.f,
     ['<C-g>'] = mappings.s.g,
+    ['<C-b>'] = mappings.s.b,
     ['<C-e>'] = mappings.s.e,
 })
 
