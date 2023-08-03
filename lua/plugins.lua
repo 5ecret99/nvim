@@ -7,28 +7,29 @@ packer.startup({
 
 		{ 'nvim-telescope/telescope.nvim', config = 'require("config.telescope")', 
 		requires = { 
-		{ 'nvim-lua/popup.nvim' },
-		{ 'nvim-lua/plenary.nvim' },
+		{'nvim-lua/popup.nvim'},
+		{'nvim-lua/plenary.nvim'},
 		{'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
 		{'nvim-telescope/telescope-packer.nvim'},
 		{'cljoly/telescope-repo.nvim'},
-        	{'nvim-treesitter/nvim-treesitter'}
+        {'nvim-treesitter/nvim-treesitter'},
+		{'kyazdani42/nvim-web-devicons'},
 		}, },
 
         {'folke/which-key.nvim', config = 'require("config.whichkey")'},
 		
 		{'kyazdani42/nvim-web-devicons'},
 
-		{ 'numToStr/Comment.nvim', config = 'require("Comment").setup()' },
+		{'numToStr/Comment.nvim', config = 'require("Comment").setup()' },
 
-		{ "catppuccin/nvim", config = 'vim.cmd("colorscheme catppuccin")' },
+		{"catppuccin/nvim", config = 'vim.cmd("colorscheme catppuccin")' },
 
-		{ 'neoclide/coc.nvim', branch = 'release', config = 'require("config.coc")' },
+		{'neoclide/coc.nvim', branch = 'release', config = 'require("config.coc")'},
 
+		{'jackguo380/vim-lsp-cxx-highlight'},
 
-		{ "jackguo380/vim-lsp-cxx-highlight" },
-
-        {'akinsho/bufferline.nvim', config = 'require("config.bufferline")'}
+        {'akinsho/bufferline.nvim', tag = "*", config = 'require("config.bufferline")',
+        requires = 'kyazdani42/nvim-web-devicons'}
 	}
 
 })
