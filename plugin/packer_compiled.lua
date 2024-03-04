@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/kali/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/kali/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/kali/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/kali/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/kali/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/gigi/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?.lua;/home/gigi/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?/init.lua;/home/gigi/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?.lua;/home/gigi/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/gigi/.cache/nvim/packer_hererocks/2.1.1692716794/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -77,82 +77,87 @@ _G.packer_plugins = {
   ["Comment.nvim"] = {
     config = { 'require("Comment").setup()' },
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
   ["bufferline.nvim"] = {
     config = { 'require("config.bufferline")' },
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
   ["coc.nvim"] = {
     config = { 'require("config.coc")' },
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
   nvim = {
     config = { 'vim.cmd("colorscheme catppuccin")' },
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/nvim",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/nvim",
     url = "https://github.com/catppuccin/nvim"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ripgrep = {
+    loaded = true,
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/ripgrep",
+    url = "https://github.com/BurntSushi/ripgrep"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
     url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope-packer.nvim"] = {
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/telescope-packer.nvim",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/telescope-packer.nvim",
     url = "https://github.com/nvim-telescope/telescope-packer.nvim"
   },
   ["telescope-repo.nvim"] = {
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/telescope-repo.nvim",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/telescope-repo.nvim",
     url = "https://github.com/cljoly/telescope-repo.nvim"
   },
   ["telescope.nvim"] = {
     config = { 'require("config.telescope")' },
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-lsp-cxx-highlight"] = {
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/vim-lsp-cxx-highlight",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/vim-lsp-cxx-highlight",
     url = "https://github.com/jackguo380/vim-lsp-cxx-highlight"
   },
   ["which-key.nvim"] = {
     config = { 'require("config.whichkey")' },
     loaded = true,
-    path = "/home/kali/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    path = "/home/gigi/.local/share/nvim/site/pack/packer/start/which-key.nvim",
     url = "https://github.com/folke/which-key.nvim"
   }
 }
